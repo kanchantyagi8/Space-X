@@ -8,8 +8,7 @@ branches:
   - master
 before_script:
   - npm install -g @angular/cli
-script:
-- ng build --prod --base-href https://kanchantyagi8.github.io/Space-X/
+  - ng build --prod
 deploy:
   provider: firebase
   token:
