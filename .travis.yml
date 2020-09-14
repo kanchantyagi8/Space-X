@@ -8,10 +8,10 @@ branches:
   - master
 before_script:
   - npm install -g @angular/cli
-  - ng build --prod
+script:
+  - npm install
+  - npm run build
 deploy:
   provider: firebase
   token:
     secure: "1//0g7E-XZ0Kuw_DCgYIARAAGBASNwF-L9IrWKieKH2gtw7CJ1oGXd3rdCq4FDjG0uIbk_oVdyg4MzTOZbUWFPSR8z15RWT3aR3ESlk"
-  project: "space-x-59933"
-  message: "Hahahaha congratulation..."
