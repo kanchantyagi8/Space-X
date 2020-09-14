@@ -1,8 +1,6 @@
 language: node_js
 node_js:
   - "12"
-dist: trusty
-sudo: required
 branches:
   only:
   - master
@@ -15,4 +13,4 @@ deploy:
   skip_cleanup: true
   provider: firebase
   token:
-    secure: "1//0g7E-XZ0Kuw_DCgYIARAAGBASNwF-L9IrWKieKH2gtw7CJ1oGXd3rdCq4FDjG0uIbk_oVdyg4MzTOZbUWFPSR8z15RWT3aR3ESlk"
+    secure: "1//0gHITqsSINJ4pCgYIARAAGBASNwF-L9IrtiOCUBUKls_vMcbwIciQHnx4cKqlt2L29jYmLLm1l5ivMN97CjYqnPevz28S2Kcawls"
