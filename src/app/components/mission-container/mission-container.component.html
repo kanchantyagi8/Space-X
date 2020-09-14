@@ -1,0 +1,15 @@
+<div class="mission-container">
+    <ul class="mission-ul">
+        <li class="mission-li" *ngFor="let mission of missionData | paginate: {
+            itemsPerPage: 10,
+            currentPage: page,
+            totalItems: totalRecords}">
+            <app-mission [spaceCraftDetails]="mission"></app-mission>
+        </li>
+    </ul>
+
+    <div class="pagination">
+        <pagination-controls (pageChange)="pageChanged($event)">    
+        </pagination-controls>
+    </div>
+</div>

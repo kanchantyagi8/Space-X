@@ -1,0 +1,38 @@
+.mission-container {
+    margin-top: 20px;
+}
+
+.mission-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mission-li {
+    display: inline-block;
+    background-color: #fff;
+    margin: 0 15px 15px 0;
+    border-radius: 4px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    min-height: 365px;
+}
+
+.pagination {
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    .mission-container {
+        margin-left: 20px;
+        overflow-y: auto;
+        height: 552px;
+        margin-top: 0;
+    }
+    .mission-li {
+        width: 207px;
+        min-height: 365px;
+    }
+}

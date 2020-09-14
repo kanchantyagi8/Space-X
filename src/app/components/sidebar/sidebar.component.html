@@ -1,0 +1,27 @@
+<div class="sidebar-filter">
+    <h2>Filters</h2>
+    <div class="launch-years">
+        <h4>Launch Year</h4>
+        <ul class="launch-ul">
+            <li class="launch-li" [ngClass]="{'active': yearSelect == launchYear}" *ngFor="let launchYear of launchYears" (click)="yearFilter(launchYear)">
+                {{launchYear}}
+            </li>
+        </ul>
+    </div>
+    <div class="success-launch">
+        <h4>Successful Launch</h4>
+        <ul class="launch-ul">
+            <li class="launch-li" [ngClass]="{'active': launchSelect == launch}" *ngFor="let launch of successLaunch" (click)="launchFilter(launch)">
+                {{launch}}
+            </li>
+        </ul>
+    </div>
+    <div class="success-landing">
+        <h4>Successful Landing</h4>
+        <ul class="launch-ul">
+            <li class="launch-li" [ngClass]="{'active': landSelect == landing}" *ngFor="let landing of successLanding" (click)="landingFilter(landing)">
+                {{landing}}
+            </li>
+        </ul>
+    </div>
+</div>

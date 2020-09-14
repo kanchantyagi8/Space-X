@@ -1,0 +1,14 @@
+<div class="mission-detail">
+    <div class="image-container">
+        <a href="{{spaceCraftDetails.video}}" target="_blank">
+            <img src="{{spaceCraftDetails.img ? spaceCraftDetails.img : '../../../assets/img/dummy-image.png'}}" alt="{{spaceCraftDetails.name}}" />
+        </a>
+    </div>
+    <p class="mission-name-id">
+        <a href="{{spaceCraftDetails.wiki}}" target="_blank">{{spaceCraftDetails.name}} #{{spaceCraftDetails.id}}</a>
+    </p>
+    <p>Mission Ids: <span>{{spaceCraftDetails.id}}</span></p>
+    <p>Launch Year: <span>{{spaceCraftDetails.year}}</span></p>
+    <p>Successfull Launch: <span>{{spaceCraftDetails.launch_report}}</span></p>
+    <p>Successfull Landing: <span>{{spaceCraftDetails.landing_report}}</span></p>
+</div>

@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'space-x';
+  title: string = 'SpaceX Launch Programs';
+  designer: string = 'Kanchan Tyagi'
+  getDataByYearFilter: any;
+  getDataByLaunchFilter: any;
+  getDataByLandingFilter: any;
 }

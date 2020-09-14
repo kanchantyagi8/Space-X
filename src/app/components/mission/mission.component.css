@@ -1,0 +1,26 @@
+.image-container {
+    background-color: lavender;
+    box-sizing: border-box;
+    height: 175px;
+    text-align: center;
+}
+
+.mission-name-id {
+    color: mediumblue;
+    height: 35px
+}
+
+p {
+    font-weight: 700;
+    margin: 7px 0;
+}
+
+span {
+    font-weight: normal;
+    color: mediumblue;
+}
+
+img {
+    height: 175px;
+    width: auto;
+}
