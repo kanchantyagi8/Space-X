@@ -12,3 +12,9 @@ before_script:
 script:
 - ng build --prod --base-href https://kanchantyagi8.github.io/Space-X/
 - firebase deploy
+deploy:
+  provider: firebase
+  token:
+    secure: "1//0g7E-XZ0Kuw_DCgYIARAAGBASNwF-L9IrWKieKH2gtw7CJ1oGXd3rdCq4FDjG0uIbk_oVdyg4MzTOZbUWFPSR8z15RWT3aR3ESlk"
+  project: "space-x-59933"
+  message: "Hahahaha congratulation..."
