@@ -6,11 +6,8 @@ branches:
   - master
 before_script:
   - npm install -g @angular/cli
+  - npm install -g firebase-tools
 script:
   - npm install
   - npm run build
-deploy:
-  skip_cleanup: true
-  provider: firebase
-  token:
-    secure: "1//0gHITqsSINJ4pCgYIARAAGBASNwF-L9IrtiOCUBUKls_vMcbwIciQHnx4cKqlt2L29jYmLLm1l5ivMN97CjYqnPevz28S2Kcawls"
+  - npm run deploy

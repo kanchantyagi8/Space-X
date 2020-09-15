@@ -11,7 +11,8 @@
     "dev:ssr": "ng run space-x:serve-ssr",
     "serve:ssr": "node dist/space-x/server/main.js",
     "build:ssr": "ng build --prod && ng run space-x:server:production",
-    "prerender": "ng run space-x:prerender"
+    "prerender": "ng run space-x:prerender",
+    "deploy": "firebase deploy --token $FIREBASE_TOKEN"
   },
   "private": true,
   "dependencies": {
