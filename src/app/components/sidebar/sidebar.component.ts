@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { SpacexService } from '../../services/spacex.service';
 import { SharedService } from '../../services/shared.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-sidebar',
@@ -17,7 +18,7 @@ export class SidebarComponent implements OnInit {
   launchSelect: string;
   landSelect: string;
 
-  constructor(
+  constructor( private location: Location,
     private spacexService: SpacexService, 
     private sharedService: SharedService) { }
 
@@ -34,9 +35,11 @@ export class SidebarComponent implements OnInit {
     if(this.filterData._year === year) {
       this.filterData._year = '';
       this.yearSelect = '';
+      this.location.back();
     } else {
       this.filterData._year = year;
       this.yearSelect = year;
+      this.location.go(`/&launch_year=${year}`);
     }
       this.getAllSpaceCrafts(this.filterData);
       this.selectedYear.emit(this.allMissions);
@@ -46,9 +49,11 @@ export class SidebarComponent implements OnInit {
     if(this.filterData._launch === launch) {
       this.filterData._launch = '';
       this.launchSelect = '';
+      this.location.back();
     } else {
       this.filterData._launch = launch;
       this.launchSelect = launch;
+      this.location.go(`/&launch_success=${launch}`);
     }
     this.getAllSpaceCrafts(this.filterData);
     this.launchDetail.emit(this.allMissions);
@@ -58,9 +63,11 @@ export class SidebarComponent implements OnInit {
     if(this.filterData._landing === landing) {
       this.landSelect = '';
       this.filterData._landing = '';
+      this.location.back();
     } else {
       this.landSelect = landing;
       this.filterData._landing = landing;
+      this.location.go(`/&land_success=${landing}`);
     }
     this.getAllSpaceCrafts(this.filterData);
     this.landingDetail.emit(this.allMissions);
