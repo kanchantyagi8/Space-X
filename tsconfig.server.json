@@ -9,6 +9,7 @@
   },
   "files": [
     "src/main.server.ts",
+    "src/polyfills.ts",
     "server.ts"
   ],
   "angularCompilerOptions": {

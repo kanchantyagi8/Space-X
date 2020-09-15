@@ -6,8 +6,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./mission.component.css']
 })
 export class MissionComponent implements OnInit {
-  dataVisible: boolean = false;
-
   constructor() { }
 
   @Input() spaceCraftDetails: any;
